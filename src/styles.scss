@@ -1,0 +1,46 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes party-soft {
+  0% {
+    background: red;
+    color: cyan;
+  }
+  33% {
+    background: green;
+    color: rgb(0, 0, 0);
+  }
+  66% {
+    background: blue;
+    color: yellow;
+  }
+  100% {
+    background: red;
+    color: cyan;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#root {
+  @extend .center;
+  @extend .full-page;
+  background: rgb(253, 227, 248);
+  animation: party-soft 10s infinite;
+}
