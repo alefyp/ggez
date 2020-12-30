@@ -57,3 +57,5 @@ const home = `
 
   <footer>Yap</footer>
 `;
+
+export default home;

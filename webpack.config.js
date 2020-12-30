@@ -7,6 +7,7 @@ module.exports = {
   devServer: {
     contentBase: "./dist",
     open: true,
+    historyApiFallback: true,
   },
   entry: "./src/index.js",
   output: {

@@ -1,18 +1,20 @@
 import champOverview from './champOverview';
+import homeOverview from './templates/home';
+// import notFoundOverview from '/notFoundOverview';
 
-const router = (route) => {
+const router = async (pathname, data) => {
+  const root = document.getElementById('root');
+  const pathnameObj = Object.keys(await data());
+  const champName = pathname.split('/')[1];
 
-  if(route){
-    console.log('hay ruta');
+  if (pathname === '/') {
+    root.innerHTML = 'home';
+  } else if (pathnameObj.includes(champName)) {
+    root.innerHTML = `Holonho ${champName}`;
   } else {
-    console.log('estoy en home');
+    root.innerHTML = 'not found';
   }
-  console.log(route, window.location.pathname);
-
-  const root = document.getElementsByTagName('body');
-  root.innerHTML = `ahora estoy en ${window.location.pathname}`;
-
-  return 'I am a router and I am doing something!';
 };
 
 export default router;
+  

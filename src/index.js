@@ -53,7 +53,13 @@ const showChamps = async (store, data) => {
   names.forEach((champ) => {
     const li = document.createElement('li');
     li.setAttribute('class', 'champ_solito');
-    li.addEventListener('click', () => window.location.hash = champ);
+    li.addEventListener('click', () => {
+      window.history.pushState(
+      {},
+      '',
+      window.location.origin + `/${champ}`);
+      router(window.location.pathname, fetchDdragon);
+  });
 
     // window.location.pathname = `/${champ}`
     li.innerHTML = `
@@ -96,10 +102,23 @@ boton.addEventListener('click', () => {
   window.location.href = '/bard';
 });
 
-window.addEventListener('hashchange', () => {
-  router(window.location.hash);
+window.addEventListener('popstate', (e) => {
+  router(window.location.pathname, fetchDdragon);
 });
+// window.onpopstate = () => {
+//   alert('aaaaaaaaaaaaaaaaaah');
+//   console.log('algo está pazanda');
+//   root.innerHTML = '';
+//   //rootDiv.innerHTML = routes[window.location.pathname]
+// };
 
+// window.addEventListener('hashchange', () => {
+//   router(window.location.hash);
+// });
+
+window.addEventListener('load', () => {
+  router(window.location.pathname, fetchDdragon);
+});
 // Start
 
 showChamps(store, fetchDdragon);
