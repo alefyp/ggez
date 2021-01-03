@@ -1,17 +1,14 @@
-const home = `
-  <nav>
-  <a href="/html/">HTML</a> |
-  <a href="/css/">CSS</a> |
-  <a href="/js/">JavaScript</a> |
-  <a href="/python/">Python</a>
-  </nav>
-  <header>
-  <h1>Choose your <span>CHAMPION</span></h1>
-  <p>
-    With more than 140 champions, you’ll find the perfect match for your
-    playstyle. Master one, or master them all.
-  </p>
-  </header>
+import styles from './home.module.scss';
+
+const home = () => (
+  `
+  <section>
+    <h1>Choose your <span>CHAMPION</span></h1>
+    <p>
+      With more than 140 champions, you’ll find the perfect match for your
+      playstyle. Master one, or master them all.
+    </p>
+  </section>
 
   <nav>
   <label for="site-search">Search the site:</label>
@@ -49,13 +46,12 @@ const home = `
   </select>
   </nav>
 
-  <main>
-  <button class="algo">Ir a otra pagina</button>
-  <div id="root"></div>
-
-  </main>
+  <section>
+    <div id="grid"></div>
+  </section>
 
   <footer>Yap</footer>
-`;
+`
+);
 
 export default home;

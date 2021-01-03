@@ -1,6 +1,6 @@
 // pendiente mover todo a una sola función
 
-export const searchByInput = (data, searchTerm) => {
+export const filterByInput = (data, searchTerm) => {
   const filteredChamps = Object.keys(data).filter((champKey) => {
     return data[champKey].name.toLowerCase().includes(searchTerm.toLowerCase());
   }).reduce((res, key) => (res[key] = data[key], res), {});

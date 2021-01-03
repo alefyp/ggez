@@ -1,0 +1,127 @@
+@import url('https://db.onlinewebfonts.com/c/5a8d949826c5f2d8733fa324b51a507d?family=BeaufortW01-Heavy');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');// trademark Beaufort Pro is a trademark of by Nick Shinn. Published by Shinn Type Foundry.
+// https://www.onlinewebfonts.com/download/5a8d949826c5f2d8733fa324b51a507d
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Extend/Inheritance
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'BeaufortW01-Heavy';
+  font-style: italic;
+}
+
+%full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+// Styles
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.rol-active {
+  background-color: aqua;
+}
+
+header {
+  background-color: #111111;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lateral-nav-bar {
+  background-color: #212121;
+  z-index: 100;
+  //display: none;
+  position: fixed;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  right: 0;
+  transition: width 0.2s;
+  transition-timing-function: ease-in;
+  
+
+  .lateral-nav-bar__header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    height: 80px;
+    border-bottom: solid rgb(56, 56, 56) 2px;
+    background-color: #111111;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lateral-nav-bar__link{
+    padding: 20px 18px;
+    border-bottom: 1px solid black;
+    width: 315px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+
+    span{
+      position: absolute;
+      right: 30px;
+    }
+  }
+}
+
+// riot navbar
+.lateral-riotbar{
+  background-color: #F8F8F8;
+  width: 280px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.2s;
+  transition-timing-function: ease-in;
+
+  img{
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .lateral-riotbar__header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: rgb(238, 236, 236) solid 1px;
+  }
+
+  .lateral-riotbar__content{
+    padding: 12px;
+  }
+
+  .lateral-riotbar__content_game{
+    background-color: blue;
+  }
+}
+
