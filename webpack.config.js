@@ -5,13 +5,13 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   mode: "development",
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./public",
     open: true,
     historyApiFallback: true,
   },
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
   },
   module: {
