@@ -1,16 +1,23 @@
 import styles from './home.module.scss';
 
-const home = () => (
+const home = (
   `
-  <section>
-    <h1>Choose your <span>CHAMPION</span></h1>
-    <p>
-      With more than 140 champions, you’ll find the perfect match for your
-      playstyle. Master one, or master them all.
-    </p>
+  <div class="${styles.container}">
+  <section class= ${styles['header-section']}>
+    <h1>
+      <span class=${styles['header-section__intro']}>CHOOSE YOUR</span> 
+      <span class=${styles['header-section__title']}>CHAMPION</span>
+    </h1>
+    <div class=${styles['header-section__paragraph']}>
+      <p>
+        With more than 140 champions, you’ll find the perfect match for your
+        playstyle. Master one, or master them all.
+      </p>
+    </div>
+    
   </section>
 
-  <nav>
+  <nav class= ${styles['nav-filters']}>
   <label for="site-search">Search the site:</label>
   <input type="search" id="site-search" name="q" placeholder="Search" aria-label="Search through site content">
 
@@ -47,10 +54,13 @@ const home = () => (
   </nav>
 
   <section>
-    <div id="grid"></div>
+    <div>
+      <ul id="grid" class=${styles.grid}></ul>
+    </div>
   </section>
 
   <footer>Yap</footer>
+  </div>
 `
 );
 

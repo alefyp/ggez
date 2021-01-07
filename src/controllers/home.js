@@ -41,21 +41,21 @@ const homeController = () => {
 
     // now... finally!
     grid.innerHTML = '';
-    const ul = document.createElement('ul');
+    //const ul = document.createElement('ul');
     const names = Object.keys(result);
 
     names.forEach((champ) => {
       const li = document.createElement('li');
       li.addEventListener('click', () => {
-        window.history.pushState({}, '', `/${champ}`);
+        window.history.pushState({}, '', `${window.location.href}/${champ}`);
         dispatchEvent(new PopStateEvent('popstate'));
       });
 
       li.innerHTML = champCard(champ, result[champ].name);
-      ul.appendChild(li);
+      grid.appendChild(li);
     });
 
-    grid.appendChild(ul);
+    //grid.appendChild(ul);
   };
 
   // ###### DOM manipulation #######

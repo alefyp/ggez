@@ -5,7 +5,6 @@ import fetchDdragon from './API/fetchDragon';
 // hello
 window.addEventListener('load', () => {
   router(window.location.pathname);
-  console.log(window.location);
 });
 
 window.addEventListener('popstate', () => {
@@ -25,3 +24,14 @@ navBarClose.addEventListener('click', () => {
   navBar.style.width = '0px';
 });
 
+const riotNavBar = document.getElementsByClassName('lateral-riotbar')[0];
+const riotNavBarClose = document.getElementsByClassName('lateral-riotbar__button_close')[0];
+const riotNavBarOpen = document.getElementsByClassName('lateral-riotbar__button_open')[0];
+
+riotNavBarOpen.addEventListener('click', () => {
+  riotNavBar.style.width = '280px';
+});
+
+riotNavBarClose.addEventListener('click', () => {
+  riotNavBar.style.width = '0';
+});
