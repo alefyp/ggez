@@ -1,6 +1,5 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -49,17 +48,5 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/index.html",
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: "./src/assets",
-          to: "./assets",
-        },
-      ],
-    }),
   ],
 };
-
-//import img from './file.png';
-//import styles from "./style.css";
-//import styles from "./style.scss"; or modules since is auto true

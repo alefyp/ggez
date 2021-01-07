@@ -7,7 +7,7 @@ const router = async (pathname) => {
   console.log(pathname);
   console.log(window.location.hostname);
 
-  if (pathname === '' || pathname === '/ggez' || pathname === '/ggez/') {
+  if (pathname === '' || pathname === '/') {
     homeController();
   }
   else {

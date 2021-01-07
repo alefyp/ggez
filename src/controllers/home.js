@@ -47,7 +47,7 @@ const homeController = () => {
     names.forEach((champ) => {
       const li = document.createElement('li');
       li.addEventListener('click', () => {
-        window.history.pushState({}, '', `${window.location.href}/${champ}`);
+        window.history.pushState({}, '', `${window.location.href}${champ}`);
         dispatchEvent(new PopStateEvent('popstate'));
       });
 
