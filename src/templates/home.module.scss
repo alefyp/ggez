@@ -33,11 +33,63 @@
   }
 }
 
+
+//filters nav
 .nav-filters{
-  background-color: chartreuse;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+// Para el cuadrito no más
+.nav-filters__search_container{
+  border: solid 1px rgba(122, 122, 122, 0.5);
+  position: relative;
+  padding: 8px;
+
+  .nav-filters__search_icon{
+    height: 50%;
+    top: 50%;
+    left: 24px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    fill: #d6da05;
+  }
+
+  .nav-filters__search_input{
+    width: 100%;
+    padding: 6px 32px;
+    border: solid 1px rgb(255, 255, 255);
+    font-size: 12px;
+  }
+
+  .nav-filters__search_input:focus{
+    outline: none;
+  }
+
+  .nav-filters__search_input::-webkit-search-cancel-button{
+    font-size: 20px;
+  }
+}
+
+// Para los roles
+.nav-filters__rol_select{
+  align-self: center;
+  margin: 4px;
+  list-style: none;
+  button{
+    width: 100%;
+    padding: 2px;
+    border-style: none;
+    margin: 4px;
+    height: 25px;
+    cursor: pointer;
+    
+  }
+
+  button:active, button:focus{
+    outline: none;
+  }
 }
 
 .grid{

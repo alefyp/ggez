@@ -8,10 +8,11 @@ module.exports = {
     open: true,
     historyApiFallback: true,
   },
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
+    publicPath: '/',
   },
   module: {
     rules: [

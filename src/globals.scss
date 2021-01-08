@@ -33,8 +33,14 @@ body {
   margin-top: 80px;
 }
 
-.rol-active {
-  background-color: aqua;
+
+
+.rol-btn{
+  background-color: white;
+}
+.rol-active.rol-btn {
+  border-bottom: solid 4px rgb(255, 174, 0);
+  font-weight: bold;
 }
 
 header {

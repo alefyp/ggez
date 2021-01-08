@@ -84,6 +84,10 @@ const homeController = () => {
 
   // Default show at start
   showChamps(store, fetchDdragon);
+
+  // Styling controls
+  const searchIcon = document.getElementById('search-icon');
+  searchIcon.addEventListener('click', () => console.log('svgggggggg'));
 };
 
 export default homeController;
