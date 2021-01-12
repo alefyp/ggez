@@ -50,12 +50,14 @@ const home = (
     </li>
   </ul>
 
-  <select id="difficulty">
-    <option value="All">All difficulties</option>
-    <option value="Easy">Easy</option>
-    <option value="Medium">Medium</option>
-    <option value="Hard">Hard</option>
-  </select>
+  <div class="${styles['nav-filters__difficulty-select']}">
+    <select id="difficulty">
+      <option value="All">All difficulties</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+  </div>
   </nav>
 
   <section>
