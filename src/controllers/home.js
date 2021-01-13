@@ -87,7 +87,7 @@ const homeController = () => {
 
   // Styling controls
   const searchIcon = document.getElementById('search-icon');
-  searchIcon.addEventListener('click', () => console.log('svgggggggg'));
+  searchIcon.addEventListener('click', () => console.log('svg'));
 };
 
 export default homeController;

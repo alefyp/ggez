@@ -12,11 +12,13 @@
     padding-top: 80px;
     background-color: #f8f8f8;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1rem;
   }
 
   .header-section__title{
     display: inline-block;
-    font-size: calc(5vw + 20px);
+    font-size: calc(5.5vw + 20px);
     width: 100%;
     background: linear-gradient(to top, #ffffff 50%, #f8f8f8 50%);
   }
@@ -25,11 +27,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    letter-spacing: 0.1rem;
+
+    p{
+      padding-bottom: 4%;
+    }
   }
   p{
-    max-width: 400px;
+    max-width: 600px;
     line-height: 1.6;
-    padding: 12px;
+    padding-top: 4px;
   }
 }
 
@@ -39,6 +46,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
+
 }
 
 // Para el cuadrito no más
@@ -74,17 +85,11 @@
 
 // Para los roles
 .nav-filters__rol_select{
-  align-self: center;
-  margin: 4px;
   list-style: none;
   button{
     width: 100%;
-    padding: 2px;
     border-style: none;
-    margin: 4px;
-    height: 25px;
     cursor: pointer;
-    
   }
 
   button:active, button:focus{
@@ -127,6 +132,18 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      background-color: gray;
+      button{
+        height: 100%;
+        padding: 0px 16px;
+        border-bottom: 0px solid transparent;
+        color:rgba(122, 122, 122, 0.5);
+        &:hover{
+          border-bottom: solid 3px rgba(209, 160, 0, 0.3);
+          padding-top: 3px;
+          color: black;
+        }
+      }
     }
 
     &__search_container{
