@@ -1,6 +1,5 @@
-@import url('https://db.onlinewebfonts.com/c/5a8d949826c5f2d8733fa324b51a507d?family=BeaufortW01-Heavy');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); // trademark Beaufort Pro is a trademark of by Nick Shinn. Published by Shinn Type Foundry.
-// https://www.onlinewebfonts.com/download/5a8d949826c5f2d8733fa324b51a507d
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
 
 * {
   box-sizing: border-box;
@@ -17,8 +16,9 @@
 }
 
 h1, h2 {
-  font-family: 'BeaufortW01-Heavy', 'Times New Roman', Times, serif;
+  font-family: 'Arvo', serif;
   font-style: italic;
+  font-weight: bold;
 }
 
 %full-page {
