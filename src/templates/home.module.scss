@@ -1,4 +1,8 @@
-
+// my animations
+@keyframes move{
+  0%   {left: 30px;}
+  100% {left: 0px;}
+}
 .container{
   width: 100%;
 }
@@ -6,6 +10,9 @@
 .header-section{
 
   text-align: center;
+  animation-duration: 2000ms;
+  animation-delay: 500ms;
+  animation-timing-function: cubic-bezier(0.165, 0.82, 0.44, 1);
   
   .header-section__intro{
     display: inline-block;
@@ -22,13 +29,17 @@
     width: 100%;
     background: linear-gradient(to top, #ffffff 50%, #f8f8f8 50%);
     margin-top: -1px;
+    
+    
   }
 
   .header-section__paragraph{
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: center;
     letter-spacing: 0.1rem;
+    animation: move 2s;
 
     p{
       padding: 0% 4% 2% 4%;

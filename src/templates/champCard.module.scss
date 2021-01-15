@@ -1,3 +1,8 @@
+@keyframes move{
+  0%   {padding-left: 12px;}
+  100% {padding-left: 28px;}
+}
+
 .container{
   height: 250px;
   background-color: cornflowerblue;
@@ -19,7 +24,9 @@
     }
     h2{
       background-color: rgb(0, 102, 128);
+      animation: move 1s;
       transition: background-color 0.5s linear;
+      padding-left: 25px;
     }
     &::after{
       width: 0;
@@ -38,6 +45,7 @@
     color: white;
     letter-spacing: 0.08em;
     font-style: italic;
+    
   }
 
   img{
@@ -60,4 +68,5 @@
   height: 20px;
   transform: rotate(45deg);
   background-color: rgb(255, 255, 255);
+  transition: all .5s;
 }
