@@ -113,6 +113,9 @@ header {
     }
   }
 }
+.lateral-nav-bar__button_open, .lateral-nav-bar__button_close{
+  cursor: pointer;
+}
 
 // riot navbar
 .lateral-riotbar {
