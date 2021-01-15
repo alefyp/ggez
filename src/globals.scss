@@ -47,6 +47,11 @@ ul{
   border-bottom: solid 3px rgb(173, 118, 0);
   padding-top: 3px;
   color: black;
+
+  &:hover{
+    border-bottom: solid 3px rgb(173, 118, 0);
+    padding-top: 3px;
+  }
 }
 
 header {
@@ -59,11 +64,13 @@ header {
   top: 0;
   width: 100vw;
   z-index: 100;
+
+  
 }
 
 .lateral-nav-bar {
   background-color: #212121;
-  z-index: 100;
+  z-index: 80;
   //display: none;
   position: fixed;
   top: 0;
@@ -83,6 +90,7 @@ header {
     border-bottom: solid rgb(56, 56, 56) 2px;
     background-color: #111111;
   }
+  
 
   nav {
     display: flex;

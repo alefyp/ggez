@@ -31,13 +31,12 @@
     letter-spacing: 0.1rem;
 
     p{
-      padding-bottom: 4%;
+      padding: 0% 4% 2% 4%;
     }
   }
   p{
     max-width: 600px;
     line-height: 1.6;
-    padding-top: 4px;
   }
 }
 
@@ -98,6 +97,23 @@ box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
   }
 }
 
+// Para la dificultad
+.nav-filters__difficulty-select{
+  width: 12%;
+
+  select{
+    height: 100%;
+    width: 100%;
+    padding: 8%;
+    border-style: none;
+    background: transparent;
+    margin-right: 8%;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
 .grid{
   width: 100%;
   display: grid;
@@ -116,7 +132,7 @@ box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
   }
 }
 // Media queries
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
   .grid{
     grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
     grid-gap: 20px;
@@ -151,33 +167,6 @@ box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.75);
       border: none;
       border-right: solid 1px rgb(202, 202, 202);
       width: 10%;
-    }
-
-    &__difficulty-select{
-      appearance: none;
-      background-color: rgba(0, 0, 0, 0);
-      outline: none;
-      select{
-        width: 100%;
-        min-width: 15ch;
-        max-width: 30ch;
-        border: 1px solid var(--select-border);
-        border-radius: 0.25em;
-        padding: 0.25em 0.5em;
-        font-size: 1.25rem;
-        cursor: pointer;
-        line-height: 1.1;
-        background-color: #fff;
-        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
-
-        &::after{
-          content: "";
-          width: 0.8em;
-          height: 0.5em;
-          background-color: rgb(0, 0, 0);
-          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-        }
-      }
     }
   }
 }
