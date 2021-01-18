@@ -1,27 +1,23 @@
-import champOverview from './champOverview';
+import champController from './controllers/champ';
 import homeController from './controllers/home';
-// import notFoundOverview from '/notFoundOverview';
+import fetchDdragon from './API/fetchDragon';
+import notFoundController from './controllers/notFound';
+import notFound from './templates/notFound';
 
 const router = async (pathname) => {
   const champName = pathname.split('/')[1];
   const upsss = pathname.split('/')[2];
+  let urlChampList = [];
+  urlChampList = Object.keys(await fetchDdragon());
   const root = document.getElementById('root');
-  console.log(pathname);
-  console.log(window.location.hostname);
 
   if (pathname === '' || pathname === '/') {
     homeController();
   }
 
-  if(upsss){
-    root.innerHTML = `PAGE NOT FUCKING FOUND`;
+  if (urlChampList.includes(champName)) {
+    root.innerHTML = await champController(champName);
   }
-  
-  if(champName === 'Ahri'){
-    root.innerHTML = `Holonho ${champName}`;
-  }
-    
-  
 };
 
 export default router;

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "webpack --mode production && firebase deploy --only hosting"
   },
   "repository": {
     "type": "git",
@@ -37,5 +38,8 @@
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "firebase-tools": "^9.2.1"
   }
 }

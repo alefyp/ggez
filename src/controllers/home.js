@@ -1,5 +1,4 @@
 import { filterByRol, filterByDifficulty, filterByInput } from '../filters';
-import router from '../router';
 import home from '../templates/home';
 import fetchDdragon from '../API/fetchDragon';
 import champCard from '../templates/champCard';
@@ -11,12 +10,10 @@ const homeController = () => {
 
   // grabbing dom elements
   const grid = document.getElementById('grid');
-  const boton = document.getElementsByClassName('algo')[0];
   const rolButtons = document.getElementsByClassName('rol-btn');
   const rolSelection = document.getElementsByClassName('rol-active');
   const searchInput = document.querySelector('#site-search');
   const difficultySelect = document.querySelector('#difficulty');
-  const individualChamps = document.getElementsByClassName('champ-solito');
 
   // filter params
   const store = {
@@ -41,7 +38,6 @@ const homeController = () => {
 
     // now... finally!
     grid.innerHTML = '';
-    //const ul = document.createElement('ul');
     const names = Object.keys(result);
 
     names.forEach((champ) => {
@@ -54,8 +50,6 @@ const homeController = () => {
       li.innerHTML = champCard(champ, result[champ].name);
       grid.appendChild(li);
     });
-
-    //grid.appendChild(ul);
   };
 
   // ###### DOM manipulation #######
@@ -84,10 +78,6 @@ const homeController = () => {
 
   // Default show at start
   showChamps(store, fetchDdragon);
-
-  // Styling controls
-  const searchIcon = document.getElementById('search-icon');
-  searchIcon.addEventListener('click', () => console.log('svg'));
 };
 
 export default homeController;

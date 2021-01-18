@@ -1,0 +1,42 @@
+.champ__container{
+  width: 100%;
+  height: 100%;
+  //margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+  //object-fit: cover;
+}
+
+.container__background{
+  transform: scale(1.05);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero{
+  background-color: #000000a8;
+  padding: 12px;
+  color: white;
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  svg{
+    fill: bisque;
+  }
+
+  &__img-asset{
+    
+    object-fit: cover;
+    width: 100%;
+    max-width: 1400px;
+  }
+
+}
