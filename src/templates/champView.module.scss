@@ -144,3 +144,19 @@
     }
   }
 }
+
+.polygon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 11px;
+  margin-bottom: 12px;
+
+  &__item{
+    background-color: aqua;
+    width: 16px;
+    height: 16px;
+    margin: 0px 2px;
+    transform: skewX(-30deg);
+  }
+}

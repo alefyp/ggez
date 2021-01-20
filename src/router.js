@@ -16,7 +16,7 @@ const router = async (pathname) => {
   }
 
   if (urlChampList.includes(champName)) {
-    root.innerHTML = await champController(champName);
+    await champController(champName);
   }
 };
 
