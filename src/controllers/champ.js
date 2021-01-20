@@ -11,11 +11,12 @@ const champController = async (champ) => {
     tags,
     info,
     id,
+    name,
   } = champInfo[champ];
 
   console.log(lore);
 
-  return champView(title, champ, tags[0], info.difficulty, lore, id);
+  return champView(title, name, tags[0], info.difficulty, lore, id);
 };
 
 export default champController;

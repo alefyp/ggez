@@ -1,5 +1,6 @@
 import styles from './champView.module.scss';
 import rols from './rolesAssets';
+import difficultyRender from './difficultySpan';
 
 const champView = (title, name, rol, difficulty, lore, id) => (
   `<div class=${styles.champ__container}>
@@ -18,15 +19,20 @@ const champView = (title, name, rol, difficulty, lore, id) => (
           <h3>${title}</h3>
           <h1>${name}</h1>
         </div>
-        <div ${styles.hero__square}>
-          <div ${styles['hero__square-rol']}>
+        <div class=${styles.hero__square}>
+          <div class=${styles['hero__square-rol']}>
             ${rols[rol]}
+            <h4>ROL</h4>
             <p>${rol}</p>
           </div>
-          <div ${styles['hero__square-difficulty']}>
-            ${difficulty}
-            <p>${lore}</p>
+          <div class=${styles['hero__square-difficulty']}>
+            ${difficultyRender(difficulty)[0]}
+            <h4>Difficulty</h4>
+            <p>${difficultyRender(difficulty)[1]}</p>
           </div>
+        </div>
+        <div class=${styles.hero__lore}>
+          <p>${lore}</p>
         </div>
       </div>
     </div>

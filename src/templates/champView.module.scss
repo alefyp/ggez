@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 .champ__container{
   width: 100%;
   height: 100%;
@@ -22,7 +24,6 @@
 .hero{
   background-color: #00030eb7;
   padding: 12px;
-  //padding-top: calc(12px + 0.5px);
   color: white;
   position: relative;
   top: 0px;
@@ -30,15 +31,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  //margin-top: -10px;
-  // opacity: 0.5;
-  //z-index: -2;
-  //border: 1px solid gray;
 
   &__home-button{
     border-style: none;
-    background-color: rgba(3, 0, 26, 0.733);
-    //border: solid 0.5px aqua;
+    background-color: rgba(3, 0, 26, 0.9);
     position: absolute;
     margin: 12px;
     top: 12px;
@@ -61,15 +57,12 @@
     border-left: 0.5px solid rgba(128, 128, 128, 0.5);
     border-right: 0.5px solid rgba(128, 128, 128, 0.5);
     z-index: 26;
-    margin-top: -24px;
-    // padding-top: -10px;
-    //opacity: 0.1;
   }
 
   &__section-header{
     text-align: center;
     //height: 100px;
-    margin-top: -50.5px;
+    margin-top: -45px;
     text-transform: uppercase;
     //background-color: green;
     h3{
@@ -77,21 +70,19 @@
     }
 
     h1{
-      font-size: calc(5.2vw + 20px);
+      font-size: 40px;
       overflow: hidden;
       height: 58px;
       line-height: 58px;
-      //background-color: green;
-      //margin-top: -24px;
 
       &::before, &::after{
         content: "";
-    display: inline-block;
-    height: 0.5px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-    background-color: rgba(128, 128, 128, 0.5);
+        display: inline-block;
+        height: 0.5px;
+        position: relative;
+        vertical-align: super;
+        width: 50%;
+        background-color: rgba(128, 128, 128, 0.5);
       }
 
       &::before{
@@ -117,10 +108,39 @@
   }
 
   &__img-asset{
-    //mask-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,9,19,1) 100%, rgba(0,212,255,1) 100%);
     object-fit: cover;
     width: 100%;
-    max-width: 1400px;
-    //opacity: 0.2;
+    max-width: 1200px;
+  }
+
+  &__square{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 12%;
+    align-content: center;
+    margin: 0px 48px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+
+    svg{
+      height: 28px;
+      margin-bottom: 8px;
+    }
+    p{
+      color: $color-accent;
+    }
+  }
+
+  &__lore{
+    padding: 0px;
+    margin: 0px;
+    p{
+      padding: 20px;
+      letter-spacing: 0.1rem;
+      font-size: 12px;
+      line-height: 1.5;
+    }
   }
 }
