@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
 
-
 $color-accent: rgb(208, 168, 92);
 * {
   box-sizing: border-box;
@@ -21,6 +20,11 @@ h1, h2 {
   font-family: 'Arvo', serif;
   font-style: italic;
   font-weight: bold;
+}
+
+p{
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
 }
 
 %full-page {
@@ -154,3 +158,8 @@ header {
   }
 }
 
+//vamos a hacer un button focus
+
+%button-focus{
+  outline: thin;
+}

@@ -2,7 +2,7 @@ import styles from './champView.module.scss';
 import rols from './rolesAssets';
 
 const champView = (title, name, rol, difficulty, lore, id) => (
-  `<div class=${styles.champ__container}>
+  `<section class=${styles.champ__container}>
   
     <div class=${styles.container__background} style="background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg')"></div>
     <div class=${styles.hero}>
@@ -39,7 +39,7 @@ const champView = (title, name, rol, difficulty, lore, id) => (
         </div>
       </div>
     </div>
-  </div>`
+  </section>`
 );
 
 export default champView;

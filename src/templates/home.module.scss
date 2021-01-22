@@ -1,6 +1,6 @@
 // my animations
 @keyframes move{
-  0%   {left: 30px;}
+  0%   {left: 15px;}
   100% {left: 0px;}
 }
 .container{
@@ -8,7 +8,6 @@
 }
 
 .header-section{
-
   text-align: center;
   animation-duration: 2000ms;
   animation-delay: 500ms;
@@ -29,8 +28,6 @@
     width: 100%;
     background: linear-gradient(to top, #ffffff 50%, #f8f8f8 50%);
     margin-top: -1px;
-    
-    
   }
 
   .header-section__paragraph{
@@ -38,16 +35,13 @@
     display: flex;
     position: relative;
     justify-content: center;
-    letter-spacing: 0.1rem;
-    animation: move 2s;
+    //letter-spacing: 0.1rem;
+    animation: move 1s;
 
     p{
       padding: 0% 4% 2% 4%;
+      max-width: 800px;
     }
-  }
-  p{
-    max-width: 600px;
-    line-height: 1.6;
   }
 }
 
