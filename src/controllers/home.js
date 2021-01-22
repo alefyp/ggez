@@ -2,6 +2,7 @@ import { filterByRol, filterByDifficulty, filterByInput } from '../filters';
 import home from '../templates/home';
 import fetchDdragon from '../API/fetchDragon';
 import champCard from '../templates/champCard';
+import styles from '../templates/home.module.scss';
 
 const homeController = () => {
   // template
@@ -78,6 +79,13 @@ const homeController = () => {
 
   // Default show at start
   showChamps(store, fetchDdragon);
+
+  console.log(styles['nav-filters__difficulty-select']);
+
+  // Custom select
+  // difficultySelect
+  // this select will be a funny story LOL
+  // soy estúpida XDDDDDDDDDDDDDDDD
 };
 
 export default homeController;
