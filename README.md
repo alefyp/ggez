@@ -4,8 +4,16 @@
   <img width="250" alt="What the hell is this?" src="https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg" />
 </p>
 
+_A single web application made with pure javascript, sass and html._
 
+ The main idea was to redo a project I did when I started to study web development and contrast: what am I missing? what can I improve? but at the beginning, I didn't expect to put a lot of details in it. I worked on code I had almost a year ago and changed many others on the fly xD So... this is a **mix** of many little things I was curious to learn.
 
+## I'm using...
+
+- Data and assets from Data Dragon.Thank you <a href="">rito pls</a> 👌🏻
+- `webpack` and `webpack-dev-server`
+- Javascript ES6, no framworks | HTML5 | SASS
+- Firebase hosting: perfect for SPA 🙌🏻
 
 
 ## What did I learn?
@@ -30,6 +38,11 @@
     * `keyframes` and `animation` for some movement
 
 2. **MVC Arquitecture:** I tried to approach an MVC architecture, a little late, not perfect but something came out. 🤷🏻‍♀️
+
+## What I want to keep learning? 
+
+- **A C C E S I B I L I T Y :** There is too much I ignore. 
+- **C L E A N   C O D E | G O O D   P R A C T I C E S:** I need to plan my projects in a better way and be more organized! :(
 
 
 
