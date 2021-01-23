@@ -1,7 +1,7 @@
 # To the moon, lmao.
 
-<p align="center" width="100%" max-width="250px">
-  <img alt="What the hell is this?" src="https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg" />
+<p align="center">
+  <img width="250" alt="What the hell is this?" src="https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg" />
 </p>
 
 
