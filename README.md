@@ -1,8 +1,14 @@
-To the moon, lmao.
+# To the moon, lmao.
+
+![what the hell is this](https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg)
+
+1. **Javascript ES6**
+2. Webpack and webpack devServer
+
 
 ## What did I learn?
 
-1. **Bem Methodology:** Above all I think this was my most important learning on this project, the conventions made it much easier to structure and using SASS was a WOW! A new me when it comes to styling, literally. I still have a very long way to go in making components more flexible and independent but I'm very glad I started. 
+1. **Bem Methodology:** Above all I think this was my most important learning on this project, the conventions made this much easier to structure and using SASS was a WOW! A new me when it comes to styling, literally. I still have a very long way to go in making components more flexible and independent but I'm very glad I started. 
 
 ```
 <div class=${styles.hero__square}>
@@ -21,7 +27,8 @@ To the moon, lmao.
     * `filter` and `mask-image` for cool effects.
     * `keyframes` and `animation` for some movement
 
-2. **MVC Arquitecture:** I tried to approach an MVC architecture, a little late, but something came out.
+2. **MVC Arquitecture:** I tried to approach an MVC architecture, a little late, not perfect but something came out. 🤷🏻‍♀️
+
 
 
 
