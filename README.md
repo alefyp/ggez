@@ -1,9 +1,11 @@
 # To the moon, lmao.
 
-![what the hell is this](https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg)
+<p align="center" width="100%" max-width="250px">
+  <img alt="What the hell is this?" src="https://nyc3.digitaloceanspaces.com/memecreator-cdn/media/__processed__/24f/template-what-the-hell-is-this-1165-0c6db91aec9c.jpeg" />
+</p>
 
-1. **Javascript ES6**
-2. Webpack and webpack devServer
+
+
 
 
 ## What did I learn?
