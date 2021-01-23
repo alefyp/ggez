@@ -5,6 +5,9 @@
   color: white;
   width: 100%;
   margin-top: -1px;
+  
+
+  
 
   &__container{
     width: 100%;
@@ -13,6 +16,8 @@
     padding: 12px 28px;
     align-content: space-between;
     gap: 8px;
+    align-self: center;
+    max-width: 1200px;
   }
 
   &__item{
@@ -46,6 +51,9 @@
 #abilities{
   &__type{
     font-size: 12px;
+    @media screen and (min-width: 720px){
+      font-size: 16px;
+    }
   }
 
   &__name{
@@ -55,6 +63,9 @@
   &__description{
     padding: 1em 0;
     font-size: 14px;
+    @media screen and (min-width: 720px){
+      font-size: 16px;
+    }
   }
 }
 
@@ -65,5 +76,9 @@
   min-height: 320px;
   max-height: 320px;
   overflow: auto;
+  max-width: 720px;
+  @media screen and (min-width: 720px){
+    font-size: 16px;
+  }
 
 }

@@ -18,25 +18,26 @@ const champView = (title, name, rol, difficulty, lore, id) => (
           <h3>${title}</h3>
           <h1>${name}</h1>
         </div>
-        <div class=${styles.hero__square}>
-          <div class=${styles['hero__square-rol']}>
-            ${rols[rol]}
-            <h4>ROL</h4>
-            <p>${rol}</p>
-          </div>
-          <div class=${styles['hero__square-difficulty']}>
-            <div class=${styles.polygon}>
-              <div class="${styles.polygon__item} hero__square-difficulty"></div>
-              <div class="${styles.polygon__item} hero__square-difficulty"></div>
-              <div class="${styles.polygon__item} hero__square-difficulty"></div>
+          <div class=${styles.hero__square}>
+            <div class=${styles['hero__square-rol']}>
+              ${rols[rol]}
+              <h4>ROL</h4>
+              <p>${rol}</p>
             </div>
-            <h4>Difficulty</h4>
-            <p id='hero__identify-difficulty'></p>
+            <div class=${styles['hero__square-difficulty']}>
+              <div class=${styles.polygon}>
+                <div class="${styles.polygon__item} hero__square-difficulty"></div>
+                <div class="${styles.polygon__item} hero__square-difficulty"></div>
+                <div class="${styles.polygon__item} hero__square-difficulty"></div>
+              </div>
+              <h4>Difficulty</h4>
+              <p id='hero__identify-difficulty'></p>
+            </div>
           </div>
-        </div>
-        <div class=${styles.hero__lore}>
-          <p>${lore}</p>
-        </div>
+          <div class=${styles.hero__lore}>
+            <p>${lore}</p>
+          </div>
+        
       </div>
     </div>
   </section>`

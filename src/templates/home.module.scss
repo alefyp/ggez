@@ -117,7 +117,7 @@
   }
 
   @media (min-width: 920px){
-    width: 18%;
+    width: 20%;
     margin-top: 0px;
     padding: 0px;
     border-bottom-style: none;
@@ -172,7 +172,7 @@
     &__search_container{
       border: none;
       border-right: solid 1px rgb(202, 202, 202);
-      width: 10%;
+      width: 20%;
     }
   }
 }
@@ -183,5 +183,4 @@
     grid-gap: 20px;
     padding: 4% 12%;
   }
-
 }

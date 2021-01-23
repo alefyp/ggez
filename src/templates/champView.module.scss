@@ -23,7 +23,7 @@
 }
 
 .hero{
-  background: linear-gradient(to bottom, #00091373 5%,  #000913 100%);
+  background: linear-gradient(to bottom, #00091381 20%,  #000913 100%);
   padding: 12px;
   color: white;
   position: relative;
@@ -33,6 +33,18 @@
   justify-content: center;
   flex-direction: column;
   z-index: 10;
+  @media screen and (min-width: 720px){
+    padding: 2% 8%;
+  }
+
+  &__responsive-container{
+    @media screen and (min-width: 720px){
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background-color: aqua;
+    }
+  }
 
   &__home-button{
     border-style: none;
@@ -64,6 +76,12 @@
     border-left: 0.5px solid rgba(128, 128, 128, 0.5);
     border-right: 0.5px solid rgba(128, 128, 128, 0.5);
     z-index: 26;
+    height: 100%;
+    max-width: calc(1200px - 8%);
+    align-self: center;
+    @media screen and (min-width: 720px){
+      margin-top: -120px;
+    }
   }
 
   &__section-header{
@@ -71,9 +89,16 @@
     //height: 100px;
     margin-top: -45px;
     text-transform: uppercase;
+    @media screen and (min-width: 720px){
+      margin-top: -87px;
+    }
     //background-color: green;
     h3{
       font-size: 14px;
+      @media screen and (min-width: 720px){
+        font-size: 20px;
+        
+      }
     }
 
     h1{
@@ -81,6 +106,11 @@
       overflow: hidden;
       height: 58px;
       line-height: 58px;
+      @media screen and (min-width: 720px){
+        font-size: 6em;
+        height: 124px;
+        line-height: 124px;
+      }
 
       &::before, &::after{
         content: "";
@@ -112,13 +142,16 @@
     mask-image: linear-gradient(rgb(0, 0, 0) 65%, rgba(0, 0, 0, 0) 98%);
     -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 65%, rgba(0, 0, 0, 0) 98%);
     z-index: 2;
+    align-self: center;
   
   }
 
   &__img-asset{
     object-fit: cover;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
+    height: 100%;
+    max-height: 600px;
   }
 
   &__square{
@@ -131,6 +164,10 @@
     text-transform: uppercase;
     font-size: 12px;
     text-align: center;
+
+    // @media screen and (min-width: 720px){
+    //   width: 20%;
+    // }
 
     svg{
       height: 28px;
@@ -151,6 +188,10 @@
       font-size: 14px;
       line-height: 1.5;
     }
+
+    // @media screen and (min-width: 720px){
+    //   width: 20%;
+    // }
   }
 }
 
