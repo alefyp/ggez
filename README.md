@@ -10,7 +10,7 @@ _A single web application made with pure javascript, sass and html._
 
 ## I'm using...
 
-- Data and assets from Data Dragon.Thank you <a href="">rito pls</a> 👌🏻
+- Data and assets from Data Dragon.Thank you <a href="https://developer.riotgames.com/docs">rito pls</a> 👌🏻
 - `webpack` and `webpack-dev-server`
 - Javascript ES6, no framworks | HTML5 | SASS
 - Firebase hosting: perfect for SPA 🙌🏻
