@@ -66,7 +66,10 @@ const home = (
     </div>
   </section>
 
-  <footer>Yap</footer>
+  <footer class="${styles.footer}">
+    <p>This project is for educational purposes only. It's not endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. Visit the <a href="https://github.com/alefyp/ggez">Github repository</a> for more information.</p>
+    <p>League of Legends and Riot Games are trademarks, service marks, and registered trademarks of Riot Games, Inc.</p>
+  </footer>
   </div>
 `
 );
