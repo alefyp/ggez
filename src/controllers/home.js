@@ -39,16 +39,16 @@ const homeController = () => {
 
     // now... finally!
     grid.innerHTML = '';
-    const names = Object.keys(result);
+    // const names = Object.keys(result);
 
-    names.forEach((champ) => {
+    result.forEach((champ) => {
       const li = document.createElement('li');
       li.addEventListener('click', () => {
-        window.history.pushState({}, '', `${window.location.href}${champ}`);
+        window.history.pushState({}, '', `${window.location.href}${champ.id}`);
         dispatchEvent(new PopStateEvent('popstate'));
       });
 
-      li.innerHTML = champCard(champ, result[champ].name);
+      li.innerHTML = champCard(champ.id, champ.name);
       grid.appendChild(li);
     });
   };

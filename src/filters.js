@@ -1,17 +1,14 @@
-// pendiente mover todo a una sola función
-
 export const filterByInput = (data, searchTerm) => {
-  const filteredChamps = Object.keys(data).filter((champKey) => {
-    return data[champKey].name.toLowerCase().includes(searchTerm.toLowerCase());
-  }).reduce((res, key) => (res[key] = data[key], res), {});
-  return filteredChamps;
+  const filterBy = searchTerm.toLowerCase();
+  const daticosp = Object.values(data);
+  const total = daticosp.filter((champ) => champ.name.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  return total;
 };
 
 export const filterByRol = (data, rol) => {
-  const filteredChamps = Object.keys(data).filter((champKey) => {
-    return (data[champKey].tags[0] == rol ||data[champKey].tags[1] == rol);
-  }).reduce((res, key) => (res[key] = data[key], res), {});
-  return filteredChamps;
+  const datin = Object.values(data);
+  const total = datin.filter((champ) => champ.tags[0] === rol || champ.tags[1] === rol);
+  return total;
 };
 
 export const filterByDifficulty = (data, difficulty) => {
@@ -28,8 +25,8 @@ export const filterByDifficulty = (data, difficulty) => {
       range = [7, 9];
   }
 
-  const filteredChamps = Object.keys(data).filter((champKey) => {
-    return (data[champKey].info.difficulty <= range[1] && data[champKey].info.difficulty >= range[0]);
-  }).reduce((res, key) => (res[key] = data[key], res), {});
-  return filteredChamps;
+  const datin = Object.values(data);
+  // eslint-disable-next-line max-len
+  const total = datin.filter((champ) => champ.info.difficulty <= range[1] && champ.info.difficulty >= range[0]);
+  return total;
 };
